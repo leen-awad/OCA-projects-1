@@ -1,0 +1,67 @@
+.nav2 {
+    /* border-bottom: 5px teal solid; */
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+}
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+
+
+}
+
+li {
+    float: left;
+}
+.jumbotron h2{
+font-size: 4em;
+}
+form{
+color:white;
+font-size: 1.25em;
+}
+.btnA {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font: 1em serif;
+    cursor: pointer;
+    
+}
+
+.btnA:hover {
+    background-color: #111;
+    border-bottom: 5px solid goldenrod;
+    text-decoration: none;
+    color: goldenrod;
+    
+}
+
+.btnA:active {
+    background: teal;
+}
+
+.activeBtn {
+    background: teal;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #35b993;
+}
