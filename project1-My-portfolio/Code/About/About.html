@@ -1,210 +1,137 @@
 <!DOCTYPE html>
-<html id="About" lang="en">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="More About Ahmad Emar " />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-   
-    <title>About</title>
+    <title>Document</title>
 
-    
-       
+<style>
+    .item{
+        background-color: gold;
+        color: white;
+    }
 
+    .container{
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-gap: 10px;
+    }
+
+
+    .item:first-child{
+
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+    }
+
+    .item:nth-child(2){
+        grid-column-start: 1;
+    grid-column-end: 7;
+    }
+
+    .item:nth-child(3){
+        grid-column-start: 7;
+    grid-column-end: 13;
+    }
+
+    .item:nth-child(4){
+        grid-column-start: 1;
+    grid-column-end: 5;
+    }
+
+    .item:nth-child(5){
+        grid-column-start: 5;
+    grid-column-end: 9;
+    }
+
+    .item:nth-child(6){
+        grid-column-start: 9;
+    grid-column-end: 13;
+    }
+
+    .item:nth-child(7){
+        grid-column-start: 1;
+    grid-column-end: 4;
+    }
+
+    .item:nth-child(8){
+        grid-column-start: 4;
+    grid-column-end: 7;
+    }
+
+    .item:nth-child(9){
+        grid-column-start: 7;
+    grid-column-end: 10;
+    }
+
+    .item:nth-child(10){
+        grid-column-start: 10;
+    grid-column-end: 13;
+    }
+
+    .item:nth-child(11){
+        grid-column-start: 1;
+    grid-column-end: 3;
+    }
+    .item:nth-child(12){
+        grid-column-start: 3;
+    grid-column-end: 5;
+    }
+    .item:nth-child(13){
+        grid-column-start: 5;
+    grid-column-end: 7;
+    }
+    .item:nth-child(14){
+        grid-column-start: 7;
+    grid-column-end: 9;
+    }
+    .item:nth-child(15){
+        grid-column-start: 9;
+    grid-column-end: 11;
+    }
+    .item:nth-child(16){
+        grid-column-start: 11;
+    grid-column-end: 13;
+    }
+
+
+
+</style>
 
 </head>
-
-<header class="nav">
-    <ul>
-        <li>
-            <a class="btnA" href="../index.html">Home</a>
-        </li>
-        <li>
-            <a class="btnA" href="https://ahmada3mar.github.io/HTML">Github</a>
-        </li>
-        <li>
-            <a class="btnA " href="../contact/contact.html">Contact</a>
-        </li>
-        <li>
-            <a class="btnA activeBtn" href="#about">About</a>
-        </li>
-    </ul>
-
-
-
-
-
-    <script>
-        function move() {
-            var elem = document.getElementById("Photoshop");
-            var elem2 = document.getElementById("html");
-            var elem3 = document.getElementById("css");
-            var elem4 = document.getElementById("vb");
-            var elem5 = document.getElementById("sass");
-            var elem6 = document.getElementById("java");
-            var width = 20;
-            var width2 = 20;
-            var width3 = 20;
-            var width4 = 20;
-            var width5 = 20;
-            var width6 = 20;
-            var id = setInterval(frame, 20);
-            var id2 = setInterval(frame, 20);
-            var id3 = setInterval(frame, 20);
-            var id4 = setInterval(frame, 20);
-            var id5 = setInterval(frame, 20);
-            var id6 = setInterval(frame, 20);
-
-            function frame() {
-                if (width >= 75) {  
-                    clearInterval(id);
-                } else {
-                    width++;
-                    elem.style.width = width + '%';
-                    elem.innerHTML = width * 1 + '%';
-                }
-
-                if (width2 >= 100) {  
-                    clearInterval(id2);
-                } else {
-                    width2++;
-                    elem2.style.width = width2 + '%';
-                    elem2.innerHTML = width2 * 1 + '%';
-                }
-                if (width3 >= 85) {  
-                    clearInterval(id3);
-                } else {
-                    width3++;
-                    elem3.style.width = width3 + '%';
-                    elem3.innerHTML = width3 * 1 + '%';
-                }
-                if (width4 >= 90) {  
-                    clearInterval(id4);
-                } else {
-                    width4++;
-                    elem4.style.width = width4 + '%';
-                    elem4.innerHTML = width4 * 1 + '%';
-                }
-                if (width5 >= 68) {  
-                    clearInterval(id5);
-                } else {
-                    width5++;
-                    elem5.style.width = width5 + '%';
-                    elem5.innerHTML = width5 * 1 + '%';
-                }
-                if (width6 >= 35) {  
-                    clearInterval(id6);
-                } else {
-                    width6++;
-                    elem6.style.width = width6 + '%';
-                    elem6.innerHTML = width6 * 1 + '%';
-                }
-
-                
-
-
-            }
-        }
-    </script>
-</header>
-
-<body onload="move();">
-
+<body>
     <div class="container">
-        <div class="jumbo animated bounceInLeft">
-            <img src="../img/nurse.png" alt="Nurse Male">
-            <p>Yup i'm Nures Also , i studed at jordan university of science and technology class 2015 , my GPA was 3.5 out of 4 . see ! i have multi specialtyis</p>
-        </div>
-
-        <div class="main animated bounceInRight">
-            <p>i started learning more about programming at Orange coding academy , it's the most top programming academy in the jordan </p>
-            <img src="../img/orange.png" alt="orange Academy">
-        </div>
-
-        <div class="bootom animated bounceInLeft">
-
-       <div class="skilldesc">
-           <p>you can get a lock to my skills that showing on the left </p>
-       </div>
-
-        <div class="skills">
-            <div class="skillCard">
-                <img src="../img/photoshop.png" alt="Photoshop">
-                <div class="w3-light-grey w3-round w3-center barA">
-                    <div id="Photoshop" class="w3-container w3-blue w3-round" style="width:0%"> 0%</div>
-                </div>
-            </div>
-            <div class="skillCard">
-                <img src="../img/html.png" alt="html">
-                <div class="w3-light-grey w3-round w3-center barA">
-                    <div id="html" class="w3-container w3-blue w3-round" style="width:0%"> 0%</div>
-                </div>
-            </div>
-            <div class="skillCard">
-                <img src="../img/css.png" alt="cc">
-                <div class="w3-light-grey w3-round w3-center barA">
-                    <div id="css" class="w3-container w3-blue w3-round" style="width:0%"> 0%</div>
-                </div>
-            </div>
-            <div class="skillCard">
-                <img src="../img/vb.jpg" alt="vb">
-                <div class="w3-light-grey w3-round w3-center barA">
-                    <div id="vb" class="w3-container w3-blue w3-round" style="width:0%"> 0%</div>
-                </div>
-            </div>
-            <div class="skillCard">
-                <img src="../img/sass.png" alt="sass">
-                <div class="w3-light-grey w3-round w3-center barA">
-                    <div id="sass" class="w3-container w3-blue w3-round" style="width:0%"> 0%</div>
-                </div>
-            </div>
-            <div class="skillCard">
-                <img src="../img/java.png" alt="java">
-                <div class="w3-light-grey w3-round w3-center barA">
-                    <div id="java" class="w3-container w3-blue w3-round" style="width:0%"> 0%</div>
-                </div>
-            </div>
-          
-            <!-- <div class="skillCard">
-                <div class="w3-light-grey w3-round w3-center">
-                    <div id="HTML" class="w3-container w3-blue w3-round"style="width:0%"> 0%</div> 
-                  </div><br>
-            </div>
-            <div class="skillCard">
-                <div class="w3-light-grey w3-round w3-center">
-                    <div id="JavaScript" class="w3-container w3-blue w3-round"style="width:0%"> 0%</div> 
-                  </div><br>
-            </div>
-            <div class="skillCard">
-                <div class="w3-light-grey w3-round w3-center">
-                    <div id="Python" class="w3-container w3-blue w3-round"style="width:0%"> 0%</div> 
-                  </div><br>
-            </div>
-            <div class="skillCard">
-                <div class="w3-light-grey w3-round w3-center">
-                    <div id="CSS" class="w3-container w3-blue w3-round"style="width:0%"> 0%</div> 
-                  </div><br>
-            </div>
-            <div class="skillCard">
-                <div class="w3-light-grey w3-round w3-center">
-                    <div id="Vb" class="w3-container w3-blue w3-round"style="width:0%"> 0%</div> 
-                  </div><br>
-            </div>
-                  
-            </div> -->
-
-
-        </div>
-    </div>
-    </div>
-
-
-
-
-
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+        <div class="item">17</div>
+        <div class="item">18</div>
+        <div class="item">19</div>
+        <div class="item">20</div>
+        <div class="item">21</div>
+        <div class="item">22</div>
+        <div class="item">23</div>
+        <div class="item">24</div>
+        <div class="item">25</div>
+        <div class="item">26</div>
+        <div class="item">27</div>
+        <div class="item">28</div>
+    </div>    
 </body>
-
 </html>

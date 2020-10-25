@@ -73,7 +73,7 @@
     grid-template-columns: repeat(2,1fr);
     
     position: sticky;
-    top: 0;
+  
     
 
     background-color: teal;

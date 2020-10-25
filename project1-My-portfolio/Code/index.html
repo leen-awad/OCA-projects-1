@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="en" id="home">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full stack developer , and moblie app programmer . Ahmad E'mar , one of the top programmer he's expert on many technologies such as java , JavaScript , python , c# , Vb.nt , react , reactNative , php , Asp .net and dart "/>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Sansita Swashed' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Full stack developer , and moblie app programmer . Ahmad E'mar , one of the top programmer he's expert on many technologies such as java , JavaScript , python , c# , Vb.nt , react , reactNative , php , Asp .net and dart " />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Sansita Swashed' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Sonsie One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Sonsie One' rel='stylesheet'>
 
 
-    <title>Ahmad E'mar</title>
+  <title>Ahmad E'mar</title>
 
-   
 
-<script>
-    document.addEventListener('DOMContentLoaded',function(event){
 
-  var dataText = [ "I'm { Full stack \n developer", ".Skills :", "HTML ; ", "Cascading Style Sheets (CSS) ; " ,"SASS ; " ,"$ PHP ; ","JavaScript ;"  , "Python ; }","Wanna More !" , "I'm Mobile Dev" , " I'm Expert " , " Java, ", " C#, " , "and VB.net . " ,"I'm Super 💪 💪" , "Looking for dev ? ", "Contact me " , "By click on contact\n on the top.. " , "Waiting your Call" ];
-  
-  
-  function typeWriter(text, i, fnCallback) {
-   
-    if (i !==   (text.length)) {
-    
-     document.querySelector(".anmitxt").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+  <script>
+    document.addEventListener('DOMContentLoaded', function (event) {
 
-    
-      setTimeout(function() {
-        typeWriter(text, i + 1, fnCallback)
-      }, 100);
+      var dataText = ["I'm { Full stack \n developer", ".Skills :", "HTML ; ", "Cascading Style Sheets (CSS) ; ",
+        "SASS ; ", "$ PHP ; ", "JavaScript ;", "Python ; }", "Wanna More !", "I'm Mobile Dev", " I'm Expert ",
+        " Java, ", " C#, ", "and VB.net . ", "I'm Super 💪 💪", "Looking for dev ? ", "Contact me ",
+        "By click on contact\n on the top.. ", "Waiting your Call"
+      ];
+
+
+      function typeWriter(text, i, fnCallback) {
+
+        if (i !== (text.length)) {
+
+          document.querySelector(".anmitxt").innerHTML = text.substring(0, i + 1) +
+            '<span aria-hidden="true"></span>';
+
+
+          setTimeout(function () {
+            typeWriter(text, i + 1, fnCallback)
+          }, 100);
+        } else if (typeof fnCallback == 'function') {
+
+          setTimeout(fnCallback, 700);
+        }
+      }
+
+      function StartTextAnimation(i) {
+        if (typeof dataText[i] == "undefined") {
+          setTimeout(function () {
+            StartTextAnimation(0);
+          }, 20000);
+        }
+
+        typeWriter(dataText[i], 0, function () {
+
+          StartTextAnimation(i + 1);
+        });
+
+      }
+
+      StartTextAnimation(0);
+    })
+
+
+    ;
+
+    function myFunction() {
+      var x = document.getElementById("Mynav");
+      if (x.className === "nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav";
+      }
     }
-   
-    else if (typeof fnCallback == 'function') {
-     
-      setTimeout(fnCallback, 700);
-    }
-  }
- 
-   function StartTextAnimation(i) {
-     if (typeof dataText[i] == "undefined"){
-        setTimeout(function() {
-          StartTextAnimation(0);
-        }, 20000);
-     }
-     
-     typeWriter(dataText[i], 0, function(){
-      
-       StartTextAnimation(i + 1);
-     });
-    
-  }
-  
-  StartTextAnimation(0);
-})
+  </script>
 
 
-;
-
-function myFunction() {
-  var x = document.getElementById("Mynav");
-  if (x.className === "nav") {
-    x.className += " responsive";
-  } else {
-    x.className = "nav";
-  }
-}
-
-
-</script>
-
-
-<title>Portfolio</title>
+  <title>Portfolio</title>
 
 
 
@@ -86,54 +89,56 @@ function myFunction() {
 <body>
 
 
-    <header id="Mynav" class="nav">
-        
-            <a class="activeBtn" href="#home">Home</a>
-           <a href="https://ahmada3mar.github.io/HTML">Github</a>
-            <a href="contact/contact.html">Contact</a>
-            <a href="About/About.html">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                ☰
-              </a>
-          
-    </header>
+  <header id="Mynav" class="nav">
+
+    <a class="activeBtn" href="#home">Home</a>
+    <a href="https://ahmada3mar.github.io/HTML">Github</a>
+    <a href="contact/contact.html">Contact</a>
+    <a href="About/About.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      ☰
+    </a>
+
+  </header>
 
 
-    <div class="container">
-       
-        <div class="jumbo">
+  <div class="container">
 
-            <div class="Name">
-                <h3>Hey I'm</h3>
-                <h1>Ahmad<br>E'mar</h1>
-            </div>
-            <div class="mask"></div>
-            <img src="img/profile4.png" alt="">
-        </div>
-        <div class="main">
-            <h2>About Me </h2>
-            <div class="anmitxt"></div>
-        </div>
-       
-        <div class="about">
+    <div class="jumbo">
 
-            <img src="img/graphic.gif" alt="">
+      <div class="Name">
+        <h3>Hey I'm</h3>
+        <h1>Ahmad<br>E'mar</h1>
+      </div>
+      <div class="mask"></div>
+      <img src="img/profile4.png" alt="">
+    </div>
+    <div class="main">
+      <h2>About Me </h2>
+      <div class="anmitxt"></div>
+    </div>
 
-            <p>
-                Still here !!? , <br> ok i'll tell you somthing , i'm a <mark>graphic designer</mark> 😁 . <br> i told you , I'm <span class="super">super</span> <br>
-                Wanna learn more about me ?? <br>
-                Click on About above <br>
-                see you 😊
-            </p>
+    <div class="about">
 
-        </div>
+      <img src="img/graphic.gif" alt="">
+
+      <p>
+        Still here !!? , <br> ok i'll tell you somthing , i'm a <mark>graphic designer</mark> 😁 . <br> i told you , I'm
+        <span class="super">super</span> <br>
+        Wanna learn more about me ?? <br>
+        Click on About above <br>
+        see you 😊
+      </p>
 
     </div>
 
-    <div class="containerNo2">
-        
-    </div>
-    
-    
+  </div>
+
+  <div class="containerNo2">
+
+  </div>
+
+
 </body>
+
 </html>
