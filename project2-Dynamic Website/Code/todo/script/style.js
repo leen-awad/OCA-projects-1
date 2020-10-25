@@ -5,7 +5,7 @@ function switchStyle(x) {
      };
 
      function onLoadThem(){
-        (localStorage.length)? document.getElementById('pagestyle').setAttribute('href', localStorage.getItem("theme")) : document.getElementById('pagestyle').setAttribute('href', "style.css");
+        (localStorage.length)? document.getElementById('pagestyle').setAttribute('href', localStorage.getItem("theme")) : document.getElementById('pagestyle').setAttribute('href', "style/style.css");
 
      }
 function fontup(x){
