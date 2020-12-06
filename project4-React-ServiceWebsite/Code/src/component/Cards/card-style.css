@@ -1,0 +1,112 @@
+.centerCardLeen {
+    display: grid;
+    place-items: center;
+}
+
+
+.containerLeen {
+    margin: 4rem 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+}
+
+.cardleen {
+    /* margin: 1rem; */
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    /* height: 35rem; */
+    width: 25rem;
+    max-width: 85vw;
+    background-color: #ebf8ff;
+    font-size: 24px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+    box-shadow: 0px 0px 5px 1px lightgray;
+    margin: 15px;
+
+
+}
+
+
+.link1 {
+    border: 1px solid #6CADDF;
+    text-decoration: none;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    background-color: #3A55B4;
+
+}
+
+
+
+.cardleen a {
+    color: white;
+    text-decoration: none !important;
+
+}
+
+.link1:hover {
+    transform: scale(1.05);
+    color: white;
+    background-color: #283A7B;
+    box-shadow: 0 0 5px #aaa;
+}
+
+.overflowLeen {
+    overflow: hidden;
+    height: 13rem;
+    width: 100%;
+
+
+
+}
+
+.card-img-top-Leen {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    width: 100%;
+
+}
+
+.cardleen:hover .card-img-top-Leen {
+    transform: scale(1.1);
+
+}
+
+
+.cardleen:hover {
+    box-shadow: 5px 5px 5px lightgray;
+    cursor: pointer;
+}
+
+.carddescription {
+    padding: 1rem;
+    font-size: 1.1rem;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.LeenPrice {
+    font-size: 1.3rem;
+    color: #1d5986;
+}
+
+
+
+.HideServicesHome {
+
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+
+}

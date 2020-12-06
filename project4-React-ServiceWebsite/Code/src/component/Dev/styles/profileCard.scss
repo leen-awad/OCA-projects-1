@@ -1,0 +1,86 @@
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .card {
+    margin: 2rem 0px;
+    width: 30%;
+    color: white;
+    background-color: #444;
+    border-radius: 30px;
+    text-align: center;
+    .background-img {
+      width: 100%;
+      height: 250px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 30px 30px 0px 0px;
+      text-align: right !important;
+      button {
+        margin: 2rem;
+        background: transparent;
+        border: 0px;
+        outline: 0;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    .personal-img {
+      display: flex;
+      justify-content: center;
+      img {
+        margin: auto;
+        margin-top: -15%;
+        width: 33%;
+        border-radius: 100%;
+      }
+    }
+    .card-body {
+      padding: 0px 1rem 1rem 1rem;
+
+      .name {
+        font-size: 1.7rem;
+      }
+      .title {
+        font-size: 1.4rem;
+        font-weight: 100;
+      }
+    }
+    .socialMedia-container {
+      //   display: flex;
+      //   justify-content: space-around;
+
+      i {
+        font-size: 2.5rem;
+        margin: 0px 1.5rem;
+        opacity: 0.8;
+        transition: 0.5s;
+      }
+      .fa-github:hover {
+        color: #000;
+        opacity: 1;
+      }
+
+      .fa-linkedin:hover {
+        color: #0a66c2;
+        opacity: 1;
+      }
+      .fa-facebook:hover {
+        color: #1773ea;
+        opacity: 1;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 90% !important;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .card {
+    width: 45% !important;
+  }
+}

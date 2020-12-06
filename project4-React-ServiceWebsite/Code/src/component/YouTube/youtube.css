@@ -1,0 +1,30 @@
+.YouTubeFullDiv * {
+
+  box-sizing: border-box;
+}
+
+.YouTubeFullDiv {
+  margin: 5rem 0 2rem 0;
+}
+
+.YouAPI {
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* box-shadow: 0 0 3px ##adadad; */
+  background-color: #252525;
+border: rgb(36, 36, 36) 10px solid;
+  border-radius: 10px;
+  margin: auto;
+}
+
+
+
+.VideoContainer {
+  display: inline-block;
+  margin: 1rem;
+
+}

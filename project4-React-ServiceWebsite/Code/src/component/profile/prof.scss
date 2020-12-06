@@ -1,0 +1,223 @@
+.center-profile {
+
+    display: grid;
+    place-items: center;
+
+    .profileb {
+        max-width: 50rem;
+        width: 95%;
+        min-height: 90vh;
+        // background-color: #8CD9FF;
+        margin: 1rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 0 5px 1px #aaa;
+
+
+
+        .profile-cover {
+            background-image: url(./img/profcover.jpg);
+            width: 100%;
+            height: 15rem;
+        }
+
+        .profile-pic {
+            display: grid;
+            place-items: center;
+            margin-top: -6rem;
+            padding: 1rem;
+
+            .imgBorder {
+                width: fit-content;
+                height: fit-content;
+                padding: 0.3rem;
+                border-radius: 100%;
+                display: grid;
+                place-items: center;
+                position: relative;
+                overflow: hidden;
+                border: 10px solid #ebf8ff;
+
+                .edit-Profile-pic {
+                    position: absolute;
+                    bottom: 0;
+                    background-color: #8cd9ffc4;
+                    width: 100%;
+                    height: 30%;
+                    display: grid;
+                    place-items: center;
+                    opacity: 0;
+                    transition: 0.4s;
+
+                }
+
+
+                img {
+                    width: 10rem;
+                    height: 10rem;
+                    border-radius: 100%;
+                    background-color: brown;
+                    transition: 0.3s;
+
+
+                }
+
+                &:hover {
+
+                    img {
+                        transform: scale(1.1);
+                    }
+
+                    .edit-Profile-pic {
+                        opacity: 0.5;
+                        z-index: 2;
+                        cursor: pointer;
+                        font-size: 1.1em;
+                        transition: 0.3s;
+
+
+                        &:hover {
+                            opacity: 1;
+                            transform: scale(1.1);
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+
+        }
+
+        .name {
+            display: grid;
+            place-items: center;
+            margin: 1rem;
+            cursor: default;
+        }
+
+
+        .info-Profile {
+            color: #444;
+            display: grid;
+            place-items: center;
+            cursor: default;
+
+
+        }
+
+        .weatherDiv {
+            margin: 1rem;
+        }
+
+        .changeInfo {
+            margin: 2rem;
+            display: grid;
+            place-items: center;
+            cursor: default;
+
+
+            .lineProf {
+                width: 90%;
+                height: 1px;
+                background-color: #ccc;
+            }
+
+            p {
+                color: #555;
+            }
+
+            .editorsBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .Change {
+                    margin: 0.5rem;
+                    font-size: 1.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.5s;
+
+                    .fas {
+                        color: #444;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                        transition: 0.5s;
+                        opacity: 0;
+                    }
+
+                    .lineProf-s {
+                        width: 100%;
+                        height: 1px;
+                        background-color: #ccc;
+                        transition: 0.5s;
+                        opacity: 0;
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                        cursor: pointer;
+
+                        .lineProf-s,
+                        p {
+                            opacity: 1;
+                        }
+
+
+                    }
+
+                }
+            }
+
+
+        }
+
+        .Profile-Servises {
+            padding: 1rem;
+
+            .Serv {
+                display: flex;
+                max-height: 20rem;
+                height: 80vh;
+                box-shadow: 0 0 3px 1px #555;
+                margin: 1rem;
+
+
+                .Service-Pic {
+                    width: 60rem;
+                    height: auto;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                    }
+
+                }
+
+                .serv-Disc {
+                    padding: 1rem;
+
+                    h3 {
+                        margin: 1rem;
+                        font-size: 1.5em;
+                    }
+
+                    
+                }
+
+            }
+        }
+
+    }
+
+
+
+
+}

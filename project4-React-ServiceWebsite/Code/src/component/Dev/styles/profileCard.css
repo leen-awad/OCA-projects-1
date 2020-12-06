@@ -1,0 +1,102 @@
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* -ms-flex-pack: distribute; */
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+}
+
+.flex-container .cardt {
+  margin:  0px;
+  width: 20%;
+  /* color: white; */
+  /* background-color: #6CADDF; */
+ 
+  text-align: center;
+
+}
+
+.cardt h3{
+  font-size: .75rem !important;
+}
+
+.cardt p{
+  font-size: 1rem !important;
+}
+
+
+.flex-container .cardt .background-img {
+  width: 100%;
+  /* height: 100px; */
+  }
+
+
+.flex-container .cardt .personal-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-container .cardt .personal-img img {
+  margin: auto;
+  /* margin-top: -20%; */
+  width: 33%;
+  border-radius: 100%;
+}
+
+.flex-container .cardt .card-body {
+  padding: 0px 1rem 1rem 1rem;
+}
+
+.flex-container .cardt .card-body .name {
+  font-size: .9rem !important;
+}
+
+.flex-container .cardt .card-body .title {
+  font-size: .8rem !important;
+  font-weight: bold;
+  color: gray !important;
+
+}
+
+.flex-container .cardt .socialMedia-container i {
+  font-size: 2.5rem;
+  margin: 0px 0.1em;
+  opacity: 0.8;
+  /* -webkit-transition: 0.5s;
+  transition: 0.5s; */
+}
+
+.flex-container .cardt .socialMedia-container .fa-github:hover {
+  color: #3A55B4;
+  opacity: 1;
+}
+
+.flex-container .cardt .socialMedia-container .fa-linkedin:hover {
+  color: #0a66c2;
+  opacity: 1;
+}
+
+.flex-container .cardt .socialMedia-container .fa-facebook:hover {
+  color: #1773ea;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .cardt {
+    width: 90% !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .cardt {
+    width: 45% !important;
+  }
+}
+
