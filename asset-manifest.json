@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/OCA-projects/static/css/main.6ac36e3c.chunk.css",
-    "main.js": "/OCA-projects/static/js/main.143580da.chunk.js",
-    "main.js.map": "/OCA-projects/static/js/main.143580da.chunk.js.map",
+    "main.js": "/OCA-projects/static/js/main.1ff44012.chunk.js",
+    "main.js.map": "/OCA-projects/static/js/main.1ff44012.chunk.js.map",
     "runtime-main.js": "/OCA-projects/static/js/runtime-main.0b7af4be.js",
     "runtime-main.js.map": "/OCA-projects/static/js/runtime-main.0b7af4be.js.map",
     "static/css/2.1f6f9449.chunk.css": "/OCA-projects/static/css/2.1f6f9449.chunk.css",
@@ -33,6 +33,6 @@
     "static/css/2.1f6f9449.chunk.css",
     "static/js/2.b9482a4a.chunk.js",
     "static/css/main.6ac36e3c.chunk.css",
-    "static/js/main.143580da.chunk.js"
+    "static/js/main.1ff44012.chunk.js"
   ]
 }
