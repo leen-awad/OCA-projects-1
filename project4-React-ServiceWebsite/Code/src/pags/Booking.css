@@ -173,6 +173,7 @@ justify-content: space-between;
     width: 30%;
     position: relative;
     transition: all 5s ease-in-out;
+    overflow: hidden;
   }
   
   .popup h2 {
@@ -202,6 +203,28 @@ justify-content: space-between;
       flex-wrap: wrap;
       justify-content: center;
   }
+  .DoneBTN {
+    background-color: #160ca5;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1rem auto;
+    transition: 0.3s;
+    max-width: 40% !important;
+    vertical-align: center;
+    align-items: center;
+    padding: 10px auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 25px;
+    box-sizing: border-box;
+
+
+}
   
   @media screen and (max-width: 700px){
     .box{

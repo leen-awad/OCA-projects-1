@@ -109,7 +109,7 @@ function Booking() {
                                         <div class="content">
                                             Thank to purchased our service , you can find purchaseds on your profile.
                                            <div className="">
-                                                <a className='DoneBTN link1' href="/profile" >
+                                                <a className='DoneBTN ' href="/profile" >
                                                     <p style={{ color: '#fff' }}>Done</p>
                                                 </a>
                                             </div>

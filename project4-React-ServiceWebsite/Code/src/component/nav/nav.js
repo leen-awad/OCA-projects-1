@@ -15,7 +15,7 @@ function Nav() {
     const [islogin2, setUserName] = useState(sessionStorage.getItem("islogin"))
 
     function loginfor() {
-        isProfile === "Profile" ? window.location = "/profile" : window.location = "/login"
+        isProfile === "Profile" ? window.location = "./profile" : window.location = "./login"
     }
 
     const openToggler = () => {
@@ -43,7 +43,7 @@ function Nav() {
             <div className="nav-page">
                 <nav className='nav'>
 
-                    <a href="/"><img style={{ height: "6vh", position: "absolute", left: "10px", top: "1vh" }} src={Logo} alt='Logo' /></a>
+                    <a href="./"><img style={{ height: "6vh", position: "absolute", left: "10px", top: "1vh" }} src={Logo} alt='Logo' /></a>
 
                     <div onClick={openToggler} className="humburger">
                         <div className="line"></div>
@@ -52,9 +52,9 @@ function Nav() {
                     </div>
 
                     <ul className={isOpen ? 'nav-links open ' : 'nav-links'}>
-                        <li><a href="/">Main</a></li>
-                        <li><a href="/services" onClick={login}>Services</a></li>
-                        <li><a href="/login" onClick={loginfor} >{isProfile}</a></li>
+                        <li><a href="./">Main</a></li>
+                        <li><a href="./services" onClick={login}>Services</a></li>
+                        <li><a href="./login" onClick={loginfor} >{isProfile}</a></li>
                         {/* <li><a onClick={logout} >About us</a></li> */}
 
                     </ul>
